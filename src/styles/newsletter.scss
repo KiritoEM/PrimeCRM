@@ -1,0 +1,194 @@
+#new-letter {
+    width: 100%;
+    height: 39rem;
+    padding-top: 2rem;
+    @include container;
+
+    @include screen(small) {
+        height: max-content;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include screen(medium) {
+        height: 28rem;       
+    }
+
+    .bg {
+        width: 100%;
+        height: 100%;
+        padding: 63px;
+        padding-top: 87px;
+        background-image: url("./../../public//assets/news-letter-bg.png");
+        background-size: cover;
+        border-radius: 30px;
+
+        @include screen(small) {
+            padding: 25px;
+            padding-top: 58px;
+            padding-bottom: 58px;
+            border-radius: 0;
+        }
+
+        @include screen(medium) {
+            padding: 42px;   
+            padding-top: 87px;
+        }
+
+        .section-header {
+            width: 100%;
+            display: flex;
+            gap: 66px;
+            overflow: hidden;
+            padding: 0;
+
+            @include screen(small) {
+                flex-direction: column;
+            }
+
+            @include screen(medium) {
+                gap: 37px;
+            }
+
+            @include screen(small) {
+                gap: 20px;
+            }
+
+            .title {
+                width: 50%;
+
+                @include screen(small) {
+                    width: 100%;
+                }
+
+                h3 {
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                p {
+                    margin-top: 10px;
+                    color: #fff;
+                    font-size: 17px;
+                    width: 86%;
+                    font-family: $font-openSans;
+
+                    @include screen(small) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .email {
+                width: 50%;
+
+                @include screen(small) {
+                    width: 100%;
+                }
+
+                p {
+                    color: #fff;
+                }
+
+                .form {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+
+                    @include screen(small) {
+                        gap: 7px;
+                    }
+
+                    @include screen(medium) {
+                        gap: 10px;
+                    }
+
+                    .input {
+                        width: 60%;
+
+                        @include screen(small) {
+                            width: 55%;
+                        }
+
+                        @include screen(medium) {
+                            width: 60%;
+                        }
+
+                        input {
+                            width: 100%;
+                            border: 0;
+                            border-radius: 4px;
+                            padding: 15px;
+                            padding-left: 1.4rem;
+
+                            @include screen(small) {
+                                padding: 12px;
+                            }
+
+                            @include screen(medium) {
+                                padding: 13px;
+                            }
+                        }
+                    }
+
+                    .button-send {
+                        width: 28%;
+
+                        @include screen(small) {
+                            width: 40%;
+                        }
+
+                        @include screen(medium) {
+                            width: 35%;
+                        }
+
+                        .btn {
+                            color: #fff;
+                            padding: 15px;
+                            color: $color-primary03;
+                            font-weight: 600;
+                            font-size: 15px;
+                            width: 100%;
+                            border-radius: 4px;
+                            background-color: #4BE3EB;
+
+                            @include screen(small) {
+                                padding: 12px;
+                            }
+
+                            @include screen(medium) {
+                                padding: 13px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .section-img {
+            width: 100%;
+            height: 100%;
+            margin-top: 3rem;
+
+            @include screen(small) {
+                display: none;
+            }
+
+            @include screen(medium) {
+                margin-top: -5.4rem;
+            }
+
+            img {
+                width: 100%;
+                height: 30rem;
+                object-fit: contain;
+
+                @include screen(medium) {
+                    height: 35rem;
+                }
+            }
+        }
+    }
+}

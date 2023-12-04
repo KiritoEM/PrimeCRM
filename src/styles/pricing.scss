@@ -1,0 +1,207 @@
+#pricing {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5.6rem;
+    padding-bottom: 3rem;
+    padding-bottom: 3rem;
+    @include container;
+
+    @include screen(small) {
+        margin-top: 4.4rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include screen(medium){
+         padding-left: 0;
+         padding-right: 0;
+    }
+
+    .section-header {
+        text-align: center;
+
+        @include screen(small) {
+            @include container;
+        }
+
+        h3 {
+            color: $color-primary03;
+            font-weight: 600;
+        }
+
+        p {
+            margin-top: 0.9rem;
+            color: $color-secondary01;
+            font-size: 17px;
+            font-family: $font-openSans;
+            margin: auto;
+            width: 60%;
+
+            @include screen(small) {
+                 width: 100%;
+            }
+
+            @include screen(medium){
+                 width: 100%;
+            }
+        }
+    }
+
+    .section-content {
+        margin-top: 2.6rem;
+
+        .bg {
+            width: 100%;
+            height: 100%;
+
+            @include screen(small) {
+                border-radius: 20px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+
+                @include screen(small) {
+                    height: 15rem;
+                    object-fit: cover;
+                }
+
+                @include screen(medium){
+                    height: 20rem;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .pricing-container {
+            width: 100%;
+            // display: flex;
+            // justify-content: center;
+            padding-left: 76px;
+            padding-right: 76px;
+            margin-top: -21rem;
+
+            @include screen(small) {
+                padding-left: 0;
+                padding-right: 0;
+                margin-top: -14.6rem;
+                @include container;
+            }
+
+            @include screen(medium){
+                margin-top: -16rem;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .box-pricing {
+                width: 100%;
+                height: 100%;
+
+                .title {
+                    width: 100%;
+
+                    h5 {
+                        color: $color-primary03;
+
+                        img {
+                            width: 40px;
+                            animation: bounce 1s infinite;
+                        }
+                    }
+                }
+
+                .box {
+                    width: 100%;
+                    padding-top: 2.6rem;
+                    padding-bottom: 2.6rem;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    background-color: #fff;
+                    box-shadow: 0 8px 22px rgb(224, 224, 224);
+                    border-radius: 25px;
+
+                    @include screen(small) {
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        padding-top: 2rem;
+                        padding-bottom: 2rem;
+                    }
+
+                    &__header {
+                        h2 {
+                            color: $color-primary03;
+                            font-weight: 900;
+                            font-size: 32px;
+                        }
+
+                        p {
+                            margin-top: 30px;
+                            color: $color-secondary01;
+
+                            b {
+                                color: $color-primary03;
+                            }
+                        }
+                    }
+
+                    .line {
+                        width: 100%;
+                        height: 1px;
+                        background-color: #dddbdb;
+                    }
+
+                    .points {
+
+                        .item {
+                            p {
+                                color: $color-secondary01;
+
+                                b {}
+
+                                img {
+                                    width: 16px;
+                                }
+                            }
+
+                            #colored {
+                                b {
+                                    color: #FFB545;
+                                }
+                            }
+                        }
+                    }
+
+                    .button {
+                        margin-top: 1.5rem;
+                        width: 100%;
+
+                        .btn {
+                            width: 100%;
+                            padding-left: 32px;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            border-radius: 5px;
+                            padding-right: 32px;
+                            font-weight: bold;
+                            font-size: 15px;
+                            border-radius: 9px;
+                        }
+
+                        #btn-1 {
+                            background-color: #EAEAEA;
+                            color: $color-primary03;
+                        }
+
+                        #btn-2 {
+                            background-color: $color-primary03;
+                            color: #dddbdb;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
